@@ -1,0 +1,12 @@
+[
+  [ "table.ply", "base.bbox.ply" ],
+  [ "shoulder.bbox.ply" ],
+  [ "upperarm.bbox.ply" ],
+  [ "forearm.bbox.ply" ],
+  [ "wrist1.bbox.ply" ],
+  [ "wrist2.bbox.ply" ],
+  [ "wrist3.bbox.ply" ],
+  [ "CONVUM_SGE-M5-N-body-m.bbox.ply",
+    "CONVUM_SGE-M5-N-suction-m.bbox.ply"
+  ]
+]

@@ -1,0 +1,11 @@
+Mesh /home/tsusaka/Test/gjk_worker/Nova2/Link5.stl loaded has 7291 vn 14550 fn
+Mesh Bounding Box SizeX 0.071540  0.126282  0.091378
+Mesh Bounding Box Size 0.071540  0.126282  0.08
+Mesh Bounding Box crop -1 1 1 
+Mesh Bounding Box Diag 0.171508 
+Mesh Bounding Box min -0.035769  -0.061778  -0.056005
+Mesh Bounding Box max 0.035770  0.064504  0.035373
+Mesh Surface Area is 0.060638
+Mesh Total Len of 21822 Edges is 78.410156 Avg Len 0.003593
+Mesh Total Len of 21822 Edges is 78.410156 Avg Len 0.003593 (including faux edges))
+Mesh is not 'watertight', no information on volume, barycenter and inertia tensor.

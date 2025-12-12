@@ -1,0 +1,8 @@
+<!DOCTYPE FilterScript>
+<FilterScript>
+  <!-- Convex Hull 計算 -->
+  <filter name="Compute Convex Hull">
+    <!-- オプション：元の頂点を削除せず残す場合は 'False' -->
+    <Param type="RichBool" value="False" name="DeleteOriginalMesh"/>
+  </filter>
+</FilterScript>

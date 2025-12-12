@@ -1,0 +1,11 @@
+*.bbox.csv
+*.bbox.ply
+*.bbox.stl
+*.bbox.gltf
+*.bbox.bin
+*.STL
+*.stl
+input.stl
+base_link.STL
+base_link.stl
+output.json

@@ -1,0 +1,9 @@
+Mesh /home/tsusaka/Test/gjk_worker/Nova2/Link6.stl loaded has 2273 vn 4514 fn
+Mesh Bounding Box Size 0.070000  0.070000  0.036000
+Mesh Bounding Box Diag 0.105338 
+Mesh Bounding Box min -0.035000  -0.035000  -0.036000
+Mesh Bounding Box max 0.035000  0.035000  0.000000
+Mesh Surface Area is 0.018635
+Mesh Total Len of 6771 Edges is 21.819653 Avg Len 0.003223
+Mesh Total Len of 6771 Edges is 21.819653 Avg Len 0.003223 (including faux edges))
+Mesh Volume  is 0.000124

@@ -1,0 +1,16 @@
+mesh files: [
+  'package://jaka_description/meshes/jaka_zu5_meshes/Link_0.STL',
+  'package://jaka_description/meshes/jaka_zu5_meshes/Link_0.STL',
+  'package://jaka_description/meshes/jaka_zu5_meshes/Link_1.STL',
+  'package://jaka_description/meshes/jaka_zu5_meshes/Link_1.STL',
+  'package://jaka_description/meshes/jaka_zu5_meshes/Link_2.STL',
+  'package://jaka_description/meshes/jaka_zu5_meshes/Oct_2.STL',
+  'package://jaka_description/meshes/jaka_zu5_meshes/Link_3.STL',
+  'package://jaka_description/meshes/jaka_zu5_meshes/Oct_3.STL',
+  'package://jaka_description/meshes/jaka_zu5_meshes/Link_4.STL',
+  'package://jaka_description/meshes/jaka_zu5_meshes/Oct_4.STL',
+  'package://jaka_description/meshes/jaka_zu5_meshes/Link_5.STL',
+  'package://jaka_description/meshes/jaka_zu5_meshes/Oct_5.STL',
+  'package://jaka_description/meshes/jaka_zu5_meshes/Link_6.STL',
+  'package://jaka_description/meshes/jaka_zu5_meshes/hand.STL'
+]

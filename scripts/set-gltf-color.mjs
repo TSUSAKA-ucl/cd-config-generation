@@ -1,0 +1,1 @@
+../nodejs/scripts/set-gltf-color.mjs

@@ -1,0 +1,13 @@
+[
+  [ "base_link.bbox.ply" ],
+  [ "Link1.bbox.ply" ],
+  [ "Link2.bbox.ply" ],
+  [ "Link3.bbox.ply" ],
+  [ "Link4.bbox.ply" ],
+  [ "Link5.bbox.ply" ],
+  [ "Link6.bbox.ply" ],
+  [ "CONVUM_SGE-M5-N-body-m.bbox.ply",
+    "CONVUM_SGE-M5-N-realsense-m.bbox.ply",
+    "CONVUM_SGE-M5-N-suction-m.bbox.ply"
+  ]
+]

@@ -1,0 +1,72 @@
+{
+  "Link_0": {
+    "visual": [
+      {
+        "origin": { "$": { "rpy": [ 0, 0, 0 ], "xyz": [ 0, 0, 0 ]}},
+        "geometry": { "mesh": { "$": {
+          "filename": "JAKA_Zu_5_BASE.gltf"
+        }}}
+      }
+    ]
+  },
+  "Link_1": {
+    "visual": [
+      {
+        "origin": { "$": { "rpy": [ 0, 0, 0 ], "xyz": [ 0, 0, 0 ]}},
+        "geometry": { "mesh": { "$": {
+          "filename": "JAKA_Zu_5_J1.gltf"
+        }}}
+      }
+    ]
+  },
+  "Link_2": {
+    "visual": [
+      {
+        "origin": { "$": { "rpy": [ 0, 0, 0 ], "xyz": [ 0, 0, 0 ]}},
+        "geometry": { "mesh": { "$": {
+          "filename": "JAKA_Zu_5_J2.gltf"
+        }}}
+      }
+    ]
+  },
+  "Link_3": {
+    "visual": [
+      {
+        "origin": { "$": { "rpy": [ 0, 0, 0 ], "xyz": [ 0, 0, 0 ]}},
+        "geometry": { "mesh": { "$": {
+          "filename": "JAKA_Zu_5_J3.gltf"
+        }}}
+      }
+    ]
+  },
+  "Link_4": {
+    "visual": [
+      {
+        "origin": { "$": { "rpy": [ 0, 0, 0 ], "xyz": [ 0, 0, 0 ]}},
+        "geometry": { "mesh": { "$": {
+          "filename": "JAKA_Zu_5_J4.gltf"
+        }}}
+      }
+    ]
+  },
+  "Link_5": {
+    "visual": [
+      {
+        "origin": { "$": { "rpy": [ 0, 0, 0 ], "xyz": [ 0, 0, 0 ]}},
+        "geometry": { "mesh": { "$": {
+          "filename": "JAKA_Zu_5_J5.gltf"
+        }}}
+      }
+    ]
+  },
+  "Link_6": {
+    "visual": [
+      {
+        "origin": { "$": { "rpy": [ 0, 0, 0 ], "xyz": [ 0, 0, 0 ]}},
+        "geometry": { "mesh": { "$": {
+          "filename": "JAKA_Zu_5_J6.gltf"
+        }}}
+      }
+    ]
+  }
+}
