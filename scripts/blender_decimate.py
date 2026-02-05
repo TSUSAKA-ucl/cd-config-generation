@@ -59,6 +59,7 @@ def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", required=True)
     parser.add_argument("--output", required=True)
+    parser.add_argument("--scale", type=float, default=1.0, help="Scaling factor")
     return parser.parse_args(argv)
 
 args = parse_args()
@@ -93,8 +94,20 @@ if ext == ".stl" or ext == ".STL":
     bpy.ops.import_mesh.stl(filepath=INPUT_PATH)
 elif ext == ".step" or ext == ".stp":
     bpy.ops.import_scene.step(filepath=INPUT_PATH)
+elif ext == ".dae" or ext == ".dae":
+    bpy.ops.wm.collada_import(filepath=INPUT_PATH)
 else:
     raise ValueError("Unsupported format")
+
+# 2. 選択されたオブジェクトの「データそのもの」を1/1000に縮小
+in_scale = args.scale
+for obj in bpy.context.selected_objects:
+    if obj.type == 'MESH':
+        # オブジェクトのスケールを0.001倍(args.scale倍)にする
+        obj.scale = (in_scale, in_scale, in_scale)
+        # トランスフォームを適用（Apply）
+        bpy.context.view_layer.objects.active = obj
+        bpy.ops.object.transform_apply(location=False, rotation=False, scale=True)
 
 obj = bpy.context.selected_objects[0]
 obj.name = "source"

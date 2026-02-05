@@ -42,20 +42,22 @@ const inputPath = process.argv[2] || './shapelist.json';
 const linkPath = process.argv[3] || './linkmap.json';
 const dirname = path.dirname(inputPath);
 const list = loadJson(inputPath, [[]]);
-const link = loadJson(linkPath, {});
+const linkList = loadJson(linkPath, {});
 const shapeOrigins  = {};
 let output = [];
-for (const convex of list) {
+for (const convexHulls of list) {
   const convexList = [];
-  for (const shape of convex) {
+  for (const shape of convexHulls) {
     const points = await loadPLY(path.join(dirname, shape));
     const tf = new Matrix4();
-    const shapeName = shape.replace(/\.[^/.]+$/, '').replace(/\.bbox[0-9]*/,'');
+    // const shapeName = shape.replace(/\.[^/.]+$/, '').replace(/\.bbox[0-9]*/,'');
+    // const shapeName = shape.replace(/\.[^/.]+$/, '');
+    const shapeName = shape;
     const transformPoints = (visual) => {
       if (visual?.geometry) {
 	const urdfName = visual.geometry?.mesh?.$?.filename;
-	const baseName = urdfName.replace(/^([^/]*\/)*/,'').replace(/\.[^/.]+$/, '');
-	if (baseName === shapeName) {
+	const basePattern = urdfName.replace(/^([^/]*\/)*/,'').replace(/\.[^/.]+$/, '');
+	if (shapeName.startsWith(basePattern)) {
 	  shapeOrigins[shape] = visual?.origin?.$;
 	  // console.log(`Found link for shape ${shape}:`, shapeOrigins[shape]);
 	  const rpy = shapeOrigins[shape]?.rpy || [0,0,0];
@@ -73,7 +75,7 @@ for (const convex of list) {
 	}
       }
     };	
-    Object.entries(link).forEach(([key, value]) => {
+    Object.entries(linkList).forEach(([key, value]) => {
       if (Array.isArray(value.visual)) {
 	value.visual.forEach((visual) => transformPoints(visual));
       } else {
