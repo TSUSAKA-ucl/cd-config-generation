@@ -38,7 +38,7 @@
 8. 良ければ `ply_loader.py`が読み取って`shapes.json`を作るための
    インデックスである`shapelist.json`を作る。stubは以下のコマンドで出来る。
    ```
-   ../scripts/create_shapelist.sh *.bbox.ply
+   ../scripts/create_shapelist.sh *.bbox.ply ../linkmap.json
    ```
 9. `shapelist.json`(の中身の配列の順番)を編集する。さらにテーブル(baseと同一の
    配列に入れる)や、endEffector(後述のジョイント数+2)も追加する。
@@ -48,7 +48,7 @@
    1個のリンクに複数のconvex colliderを着けたい場合は、配列にplyファイルを並べる
 10. `shapes.json`作成  
 	```
-	../scripts/ply_loader.js shapelist.json
+	../scripts/ply_loader.js -d 2 shapelist.json
 	```
 	`output.json`ファイルができる。これをサーバーのロボット型名のディレクトリに
 	名前を`shapes.json`と変えてコピーする。URDFをロードする時に`shapes.json`が
