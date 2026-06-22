@@ -145,6 +145,7 @@ print("Saved: step01_small_parts_removed.stl")
 # ------------------------------------------------------
 # 3. Voxel Remesh
 # ------------------------------------------------------
+bpy.context.view_layer.objects.active = obj
 mod = obj.modifiers.new("remesh", "REMESH")
 mod.mode = 'VOXEL'
 mod.voxel_size = VOXEL_SIZE
